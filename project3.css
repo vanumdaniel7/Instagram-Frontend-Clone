@@ -1,0 +1,372 @@
+body
+{
+    height: 2000px;
+    margin: 0%;
+}
+i
+{
+    cursor: pointer;
+}
+#nav1
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: white;
+    height: 50px;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+#icondiv
+{
+    display: inline-block;
+    margin-right: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+#icondiv > i
+{
+    font-size: 25px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#nav1 > img
+{
+    height: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+}
+#statusdiv
+{
+    white-space: nowrap;
+    overflow-x: auto;
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    scroll-snap-type: x mandatory;
+}
+#project > ::-webkit-scrollbar
+{
+    display: none;
+}
+.status
+{
+    cursor: pointer;
+    scroll-snap-align: start;
+    display: inline-block;
+    width: 80px;
+    height: 70%;
+}
+.status > img
+{
+    display: block;
+    width: 40px;
+    margin: 5px auto 0% auto;
+}
+.status > p
+{
+    width: 80%;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0% auto 0% auto;
+}
+#content
+{
+    height: 800px;
+}
+.post
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: -1000;
+    height: 750px;
+}
+.postheading
+{
+    height: 75px;
+}
+.reel
+{
+    border-top: 1px solid rgb(100,100,100);
+    border-bottom: 1px solid rgb(100,100,100);
+    height: 510px;
+}
+.postheading > img
+{
+    width: 40px;
+    margin: 0% 10px 0% 10px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    float: left;
+}
+.postheading > p
+{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 170px;
+    margin: 0%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.postheading > i
+{
+    margin: 0%;
+    font-size: 25px;
+    height: 20px;
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translateY(-65%);
+    margin-right: 10px;
+}
+.likediv
+{
+    height: 40px;
+}
+.likediv > i
+{
+    font-size: 25px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+}
+.likediv > #savepost
+{
+    float: right;
+    margin-right: 10px;
+}
+.post > p
+{
+    font-family: 'Montserrat', sans-serif;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    margin: 10px 0px 10px 10px;
+}
+.post > p > a
+{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+.post > a
+{
+    text-decoration: none;
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0px 10px 10px;
+}
+#searchbar
+{
+    display: none;
+}
+#projectright,#projectright1
+{
+    display: none;
+}
+@media only screen and (max-width: 350px)
+{
+    #icondiv > i
+    {
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width: 620px)
+{
+    #searchbar
+    {
+        border: 1px solid black;
+        height: 25px;
+        display: inline-block;
+        width: calc(90% - 400px);
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 3px;
+    }
+    #statusdiv
+    {
+        box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+        width: 620px;
+        margin: 15px auto 15px auto;
+    }
+    #content
+    {
+        margin: auto;
+        width: 620px;
+    }
+    .post
+    {
+        margin-bottom: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+@media only screen and (min-width: 800px)
+{
+    #searchbar
+    {
+        width: 340px;
+    }
+}
+@media only screen and (min-width: 900px)
+{
+    #nav1 > img
+    {
+        position: relative;
+        left: 30px;
+        margin-top: 5px;
+    }
+    input
+    {
+        margin-right: 10px;
+        margin-left: auto;
+        width: 270px;
+    }
+    #icondiv
+    {
+        margin-left: 9px;
+        margin-right: auto;
+    }
+    #project
+    {
+        height: 1000px;
+        margin: auto;
+        width: 900px;
+    }
+    #statusdiv,#content
+    {   
+        width: 495px;
+        float: left;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    #projectright
+    {
+        box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+        margin-top: 15px;
+        display: inline-block;
+        width: 297px;
+        height: 70px;
+    }
+    #projectright > img
+    {
+        height: 50px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 15px;
+    }
+    #projectright > a
+    {
+        color: black;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        display: inline;
+    }
+    #projectright > a:visited
+    {
+        color: black;
+    }
+    #one
+    {
+        position: relative;
+        top: -25px;
+        left: 5px;
+    }
+    #two
+    {
+        position: relative;
+        left: 75px;
+        top: -20px;
+    }
+    #projectright1
+    {
+        box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+        margin-top: 15px;
+        display: inline-block;
+        width: 297px;
+        height: 400px;
+    }
+    .suggestiondiv
+    {
+        margin-left: 5px;;
+        height: 60px;
+    }
+    .suggestiondiv > img
+    {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+    }
+    .three
+    {
+        font-size: 12px;
+        position: relative;
+        top: -15px;
+        display: inline;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .four
+    {
+        position: relative;
+        left: -94px;
+        font-size: 10px;
+        display: inline;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .five
+    {
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+        color: #58b9f9;
+        font-weight: bold;
+        background-color: white;
+        position: relative;
+        top: -7px;
+        left: 27px;
+    }
+    #six
+    {
+        margin-left: 5px;
+        display: inline-block;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 10px;
+    }
+    #seven
+    {
+        border: none;
+        width: 70px;
+        height: 20px;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        background-color: white;
+        font-size: 15px;
+        color: black;
+        position: relative;
+        left: 40px;
+        transition-duration: 0.2s;
+    }
+    #seven:hover
+    {
+        box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+    }
+}

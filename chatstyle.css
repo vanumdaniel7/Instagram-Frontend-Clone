@@ -1,0 +1,281 @@
+body
+{
+    margin: 0%;
+}
+#maindiv
+{
+    margin: 25px auto;
+    max-width: 1000px;
+    height: 650px;
+}
+#leftdiv
+{
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    height: 100%;
+    float: left;
+    width: 30%;
+}
+#rightdiv
+{
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    height: 100%;
+    float: right;
+    width: 67%;
+}
+i
+{
+    cursor: pointer;
+}
+#nav1
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: white;
+    height: 50px;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+#icondiv
+{
+    display: inline-block;
+    margin-right: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+#icondiv > i
+{
+    font-size: 25px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#nav1 > img
+{
+    height: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+}
+#searchbar
+{
+    display: none;
+}
+.username
+{
+    border: 1px solid #727278;
+    cursor: pointer;
+    height: 75px;
+}
+.username > img
+{
+    margin-left: 10px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+}
+.nameoftheuser
+{
+    transform: translate(10px,-23px);
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+}
+#userheading
+{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.info
+{
+    font-family: 'Montserrat', sans-serif;
+    transform: translate(75px,-50px);
+}
+.chat
+{
+    font-size: larger;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 250px;
+}
+#rightdiv > i
+{
+    position: relative;
+    top: 230px;
+    font-size: 70px;
+    right: -50%;
+    transform: translateX(-50%);
+}
+#button1
+{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    background-color: #0095f6;
+    font-weight: 600;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    height: 50px;
+    width: 150px;
+    position: relative;
+    top: 250px;
+}
+#modalcontainer
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+.userlist
+{
+    height: 70px;
+    border-bottom: 1px solid #727278;
+}
+.userlist > img
+{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: 50px;
+}
+.userlist > input
+{
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translateX(-50%);
+}
+.usertag
+{
+    position: relative;
+    top: -25px;
+    left: 20px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+.useractualname
+{
+    position: relative;
+    top: 0px;
+    left: -43px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+#modal
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    height: 500px;
+    width: 400px;
+}
+#closebutton
+{
+    border: none;
+    background-color: white;
+    font-size: large;
+    float: right;
+    height: 100%;
+    width: 50px;
+    background-color: none;
+}
+#modalfirst
+{
+    border-bottom: 1px solid #727278;
+    height: 50px;
+}
+#modalheading
+{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+}
+#closebutton > i
+{
+    font-size: larger;
+}
+@media only screen and (max-width: 350px)
+{
+    #icondiv > i
+    {
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width: 620px)
+{
+    #searchbar
+    {
+        border: 1px solid black;
+        height: 25px;
+        display: inline-block;
+        width: calc(90% - 400px);
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 3px;
+    }
+}
+@media only screen and (min-width: 800px)
+{
+    #searchbar
+    {
+        width: 340px;
+    }
+}
+@media only screen and (min-width: 900px)
+{
+    #nav1 > img
+    {
+        position: relative;
+        left: 30px;
+        margin-top: 5px;
+    }
+    #nav1>input
+    {
+        margin-right: 10px;
+        margin-left: auto;
+        width: 270px;
+    }
+    #icondiv
+    {
+        margin-left: 9px;
+        margin-right: auto;
+    }
+}
+@media only screen and (max-width: 730px)
+{
+    #rightdiv
+    {
+        display: none;
+    }
+    #leftdiv
+    {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 400px;
+    }
+}
